@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 import "./App.css";
 
-const API_URL = "http://127.0.0.1:8000/api/dashboard";
+const API_URL = "https://uk-wind-dasboard.onrender.com/api/dashboard";
 
 function formatNumber(value, decimals = 0) {
   if (value === null || value === undefined || !Number.isFinite(Number(value))) {
