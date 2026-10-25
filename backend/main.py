@@ -34,16 +34,19 @@ app = FastAPI(
     version="1.0.0",
 )
 
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
         "http://localhost:5173",
         "http://127.0.0.1:5173",
+        "https://ukwpprtl.vercel.app",
     ],
     allow_credentials=False,
     allow_methods=["GET"],
     allow_headers=["*"],
 )
+
 
 
 # ---------------------------------------------------------
